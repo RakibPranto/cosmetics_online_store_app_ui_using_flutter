@@ -36,7 +36,7 @@ class _MainPageState extends State<MainPage> {
               margin: const EdgeInsets.all(15.0),
               child: const Center(
                   child: Icon(
-                Icons.add,
+                Icons.center_focus_strong,
                 color: Colors.white,
               )),
             ),
@@ -206,33 +206,37 @@ class _MainPageState extends State<MainPage> {
                       decoration: BoxDecoration(
                           color: const Color(0xff42434a),
                           borderRadius: BorderRadius.circular(12)),
-                      child: Row(
-                        children: [
-                          Row(
-                            children: const [
-                              Icon(
-                                Icons.search,
-                                color: Color(0xffb7b8bc),
-                                size: 30,
-                              ),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Text(
-                                "Search products",
-                                style: TextStyle(
-                                    color: Color(0xff7a7a83),
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 12),
-                              )
-                            ],
-                          ),
-                          const Icon(
-                            Icons.menu,
-                            color: Color(0xffb7b8bc),
-                            size: 30,
-                          ),
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Row(
+                              children: const [
+                                Icon(
+                                  Icons.search,
+                                  color: Color(0xffb7b8bc),
+                                  size: 30,
+                                ),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Text(
+                                  "Search products",
+                                  style: TextStyle(
+                                      color: Color(0xff7a7a83),
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12),
+                                )
+                              ],
+                            ),
+                            const Icon(
+                              Icons.menu,
+                              color: Color(0xffb7b8bc),
+                              size: 30,
+                            ),
+                          ],
+                        ),
                       ),
                     )
                   ],
