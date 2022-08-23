@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Expanded(
-                  flex: 8,
+                  flex: 10,
                   child: Stack(children: [
                     Container(
                       height: 300,
@@ -111,7 +111,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Expanded(
-                  flex: 2,
+                  flex: 3,
                   child: SizedBox(
                     child: ListScrollWidget(),
                   ),
